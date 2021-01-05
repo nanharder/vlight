@@ -1,5 +1,7 @@
 # vlight![](https://travis-ci.com/Neulana/vlight.svg?token=ATFZGq5q9tbJu6KjZsyy&branch=master)
 基金涨跌监控，每天14:30定时抓取基金行情，如果超过自己设置的阈值，则发邮件给自己，根据行情做相应的加仓/建仓动作。解放你的注意力，避免因为频繁查看行情而**影响自己的情绪**，从而冲动操作，买基金最重要就是：选好一支基金并且长期持有。
+# 修改与补充
+修改为每天都发送邮件观察涨跌，并且包含每日估值的涨跌图，辅助观察
 # 创作动机
 [如何在理财中胜出](https://neulana.github.io/post/rational-investment/)
 # 如何构建
