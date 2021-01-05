@@ -9,6 +9,7 @@ import (
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
+	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -202,8 +203,8 @@ func GenerateHTML(fundResult []map[string]string) string {
 }
 
 func SendEmail(content string) {
-	emailName := c.EmailName
-	emailPassword := c.EmailPassword
+	emailName := os.Getenv("EMAIL_NAME")
+	emailPassword := os.Getenv("EMAIL_PASSWORD")
 	m := gomail.NewMessage()
 	m.SetHeader("From", emailName)
 	m.SetHeader("To", emailName)
